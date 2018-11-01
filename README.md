@@ -1,5 +1,5 @@
 
-> [Online Demo](https://satrong.github.io/vue-text-marquee/dist/index.html)
+> [Online Demo](https://satrong.github.io/vue-text-marquee/dist/index.html)
 
 ## Global Usage
 
