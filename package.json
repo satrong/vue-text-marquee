@@ -1,6 +1,6 @@
 {
   "name": "vue-text-marquee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "./index.js",
   "scripts": {
@@ -27,6 +27,13 @@
     "type": "git",
     "url": "https://github.com/satrong/vue-text-marquee"
   },
+  "homepage": "https://github.com/satrong/vue-text-marquee#global-usage",
+  "author": {
+    "name": "satrong"
+  },
+  "keywords": [
+    "Marquee"
+  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
