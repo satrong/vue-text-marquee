@@ -12,7 +12,9 @@
 <template>
   <div class="v-marquee">
     <div :style="{'animation-duration':time,'animation-name':name}">
-      <slot>{{content}}</slot>
+      <slot>
+        <div v-html="content"></div>
+      </slot>
     </div>
   </div>
 </template>
