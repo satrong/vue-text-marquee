@@ -10,7 +10,7 @@
 </style>
 
 <template>
-  <div class="v-marquee">
+  <div class="v-marquee" @click="$emit('click',$event)">
     <div :style="{'animation-duration':time,'animation-name':name}">
       <slot>
         <div v-html="content"></div>
