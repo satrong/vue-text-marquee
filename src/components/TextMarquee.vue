@@ -1,22 +1,28 @@
 <style lang="scss" scoped>
 .v-marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    > div {
-        display: inline-block;
-        animation: marquee linear infinite;
-    }
+  white-space: nowrap;
+  overflow: hidden;
+  > div {
+    display: inline-block;
+    animation: marquee linear infinite;
+  }
+  .pause {
+    animation-play-state: paused;
+  }
+  .running {
+    animation-play-state: running;
+  }
 }
 </style>
 
 <template>
-  <div class="v-marquee" @click="$emit('click',$event)">
-    <div :style="{'animation-duration':time,'animation-name':name}">
-      <slot>
-        <div v-html="content"></div>
-      </slot>
+    <div class="v-marquee" @click="$emit('click',$event)">
+        <div :style="{'animation-duration':time,'animation-name':name}" :class="animate?'running':'pause'">
+            <slot>
+                <div v-html="content"></div>
+            </slot>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -29,6 +35,10 @@ export default {
       default: 50,
     },
     content: String,
+    animate: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     count++;
