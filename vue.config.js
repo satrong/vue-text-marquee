@@ -1,6 +1,4 @@
 module.exports = {
-    filenameHashing: false,
-    baseUrl: process.env.NODE_ENV === 'production'
-        ? './'
-        : '/'
+  filenameHashing: false,
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/'
 };

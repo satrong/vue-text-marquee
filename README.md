@@ -21,5 +21,7 @@ export default {
 ```
 
 ## Prop
+
 - `speed` `{Number}` , scrolling speed,  default `50`
 - `content` `{String}` , scrolling content, you can also use default slot instead.
+- `animate` `{Boolean}` , control the animation is running or pause, default `true`.
