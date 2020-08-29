@@ -2,6 +2,12 @@
 
 > [Online Demo](https://satrong.github.io/vue-text-marquee/dist/index.html)
 
+## Install
+```sh
+npm i vue-text-marquee
+```
+
+
 ## Global Usage
 
 ```js
